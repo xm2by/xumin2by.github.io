@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Xi Mi</title>
+  <title>如何利用hexo+github搭建博客 | Xi Mi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="纸上得来终觉浅，绝知此事要躬行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xi Mi">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="为了搭建自己的博客，看了不少教程，有些写的很详细，也有些则很简要。自己按照看过的教程再加上自己摸石头过河，总算捣鼓出了自己的博客，对利用hexo+github搭建博客整个过程也有了一定的认识，下面我将分享一下我的博客搭建过程，主要讲一下思路以及遇到的问题。">
+<meta name="keywords" content="hexo,github,搭建博客,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何利用hexo+github搭建博客">
+<meta property="og:url" content="http://yoursite.com/2017/06/07/blog/index.html">
 <meta property="og:site_name" content="Xi Mi">
-<meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行">
+<meta property="og:description" content="为了搭建自己的博客，看了不少教程，有些写的很详细，也有些则很简要。自己按照看过的教程再加上自己摸石头过河，总算捣鼓出了自己的博客，对利用hexo+github搭建博客整个过程也有了一定的认识，下面我将分享一下我的博客搭建过程，主要讲一下思路以及遇到的问题。">
+<meta property="og:updated_time" content="2017-06-07T14:34:51.071Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xi Mi">
-<meta name="twitter:description" content="纸上得来终觉浅，绝知此事要躬行">
+<meta name="twitter:title" content="如何利用hexo+github搭建博客">
+<meta name="twitter:description" content="为了搭建自己的博客，看了不少教程，有些写的很详细，也有些则很简要。自己按照看过的教程再加上自己摸石头过河，总算捣鼓出了自己的博客，对利用hexo+github搭建博客整个过程也有了一定的认识，下面我将分享一下我的博客搭建过程，主要讲一下思路以及遇到的问题。">
   
     <link rel="alternative" href="/atom.xml" title="Xi Mi" type="application/atom+xml">
   
@@ -136,16 +138,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/07/blog/">如何利用hexo+github搭建博客</a>
+    <h1 class="article-title" itemprop="name">
+      如何利用hexo+github搭建博客
     </h1>
   
 
@@ -158,12 +158,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>为了搭建自己的博客，看了不少教程，有些写的很详细，也有些则很简要。自己按照看过的教程再加上自己摸石头过河，总算捣鼓出了自己的博客，对利用hexo+github搭建博客整个过程也有了一定的认识，下面我将分享一下我的博客搭建过程，主要讲一下思路以及遇到的问题。<br>
-        
-          <a class="article-more-a" href="/2017/06/07/blog/#more">more >></a>
-        
+        <p>为了搭建自己的博客，看了不少教程，有些写的很详细，也有些则很简要。自己按照看过的教程再加上自己摸石头过河，总算捣鼓出了自己的博客，对利用hexo+github搭建博客整个过程也有了一定的认识，下面我将分享一下我的博客搭建过程，主要讲一下思路以及遇到的问题。<br><a id="more"></a></p>
+<h1 id="1、两下一注册："><a href="#1、两下一注册：" class="headerlink" title="1、两下一注册："></a>1、两下一注册：</h1><p>两下指的是在搭建博客之前把我们要用到的软件下载一下（下面列出的是下载清单）：<br>1、<a href="http://nodejs.cn/download/" target="_blank" rel="external">node.js</a>;（点击即可到达下载页面）<br>2、<a href="https://git-scm.com/" target="_blank" rel="external">git</a>; （点击即可到达下载页面）</p>
+<p>下载完后安装好这两个软件，这两个软件的安装类似于我们常用软件如QQ的安装，按照它的安装提示一路点击即可安装成功。</p>
+<p>需要说明：hexo是一个功能很强大的博客框架，它是基于node.js开发出来的。所以在利用hexo搭建博客前，需下载安装node.js。<br>git的主要功能是通过输入相应的命令行实现hexo安装、hexo的初始化、hexo静态页面的生成、建立hexo本地服务、博客主题修改、public内容的清除、将博客内容提交到github等，检验git是否安装成功可以在桌面右击鼠标，如果在右击菜单中出现“Git Gui Here”和“Git Bash Here”选项，则表示安装成功。</p>
+<p>一注册指的在github上注册一个属于自己的账号。</p>
+<p>1、打开<a href="https://github.com" target="_blank" rel="external">github</a>官网，点击Sign Up进行注册。<br>2、注册完后新建一个repository，新建的repository名称要与你github的账号名一致，否则当hexo生成的博客放在该repository上后，你在网址栏输入yourname.github.io（yourname指的是你github账号名）时，会出现404错误，即找不到你的博客地址。<br>3、利用git为第二步建好的repository生成shh密钥，</p>
+<h1 id="2、hexo静态博客的生成"><a href="#2、hexo静态博客的生成" class="headerlink" title="2、hexo静态博客的生成"></a>2、hexo静态博客的生成</h1><p>1、在自己电脑的C盘或者其他盘（D、E…盘）下面新建一个文件夹，名字自己随便起，只要是英文且自己能看懂就可以，这个新建的文件夹用来存放有关博客的相关内容，一般命名为blog。<br>2、名字为blog的文件夹建好之后，打开该文件夹，右击出现菜单选项，此时点击“Git Bash Here”，过几秒就会出现输入命令的对话框，此时，我们输入$ npm install -g hexo命令来安装hexo。如果输入上述命令安装出现问题的话，可以重新输入$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org即可安装好hexo。" target="_blank" rel="external">https://registry.npm.taobao.org即可安装好hexo。</a><br>3、安装好后需初始化hexo，输入$ hexo init命令即可实现初始化。<br>4、完成初始化后，接下来就是hexo静态页面的生成，输入$ hexo g命令即可生成hexo静态页面。<br>5、然后输入$ hexo s来启动本地服务，启动本地服务后，在浏览器网址栏输入<a href="http://localhost:4000即可打开hexo博客页面。如果在浏览器网址栏输入http://localhost:4000没反应，也就是说打不开自己的博客页面，那么重新在git上输入$" target="_blank" rel="external">http://localhost:4000即可打开hexo博客页面。如果在浏览器网址栏输入http://localhost:4000没反应，也就是说打不开自己的博客页面，那么重新在git上输入$</a> hexo s -p 5000，然后在浏览器网址栏输入<a href="http://localhost:5000便可打开hexo博客页面。" target="_blank" rel="external">http://localhost:5000便可打开hexo博客页面。</a></p>
+<p>到这一步为止，我们已经hexo生成了自己的博客，并且在本地实现了访问。</p>
+<h1 id="3、将hexo生成的博客放到github上"><a href="#3、将hexo生成的博客放到github上" class="headerlink" title="3、将hexo生成的博客放到github上"></a>3、将hexo生成的博客放到github上</h1><p>1、将hexo生成的博客部署到github上之前需要对bolg文件下的_config.yml进行配置，打开_config.yml文件找到deploy部分，将deploy下的参数设置为：<br>deploy:<br>  type: git<br>  repository: git@github.com:yourname/yourname.github.io.git<br>  branch: master<br>注意：1、yourname指的是你的github账号；2、冒号后面的空格不能省略。<br>2、安装hexo-deployer-git自动部署发布工具，在git中输入$ npm install hexo-deployer-git –save命令即可。<br>3、在git中输入$ hexo g重新生成hexo博客页面。<br>4、在git中输入$ hexo d便可将自己的博客部署到github上。如果出现一些莫名其妙的问题，可以先执行$ hexo clean来清理一下public的内容，然后再来重新生成（$ hexo g）和发布（$ hexo d）。</p>
+<p>至此，利用hexo+github搭建的博客已经完成。</p>
+<p>最后，打开浏览器，在网址栏输入<a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a> (yourname指的是你的github账号)，按下回车键，你自己搭建的博客页面就会出现在你的面前。bingo！！！</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -195,84 +224,85 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/07/blog/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/07/blog/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/04/hello-world/">Hello World</a>
-    </h1>
   
-
-        
-        <a href="/2017/06/04/hello-world/" class="archive-article-date">
-  	<time datetime="2017-06-04T02:27:23.946Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>搭建博客是希望能够记录一下自己的学习、成长过程。</p>
-<p>看了好多搭建博客的教程后，便开始动手了，过程并没有像有些教程上所写的“20分钟搭建自己的博客”那样，在折腾了两天时间（当然，基于实事求是的原则，我中间还做了一些其他事，搭建博客是利用空余时间来进行的）后，终于利用<a href="https://hexo.io" target="_blank" rel="external">hexo</a>+<a href="https://github.com" target="_blank" rel="external">github</a>搭建好了自己的博客，在输入自己博客地址按下回车键后看到自己搭建的博客呈现在眼前时，心里有种说不出的激动。<br>
-        
-          <a class="article-more-a" href="/2017/06/04/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂谈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/04/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+    <a href="/2017/06/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
 
 
   
+  
+  
+
+  
+
   
 
 
@@ -299,8 +329,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
