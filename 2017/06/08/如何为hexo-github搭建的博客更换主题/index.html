@@ -9,13 +9,13 @@
   <title>如何为hexo+github搭建的博客更换主题 | Xi Mi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="利用hexo+github捣鼓出的博客，它一般默认的主题是landscape，这款主题不一定都适合每个人的口味，当想为自己的博客换一个酷炫、简约或清新的主题时，该怎么办呢？">
-<meta name="keywords" content="更换博客主题,hexo+github搭建博客">
+<meta name="keywords" content="更换博客主题,hexo+github搭建博客,hexo,github,博客功能设置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何为hexo+github搭建的博客更换主题">
 <meta property="og:url" content="http://yoursite.com/2017/06/08/如何为hexo-github搭建的博客更换主题/index.html">
 <meta property="og:site_name" content="Xi Mi">
 <meta property="og:description" content="利用hexo+github捣鼓出的博客，它一般默认的主题是landscape，这款主题不一定都适合每个人的口味，当想为自己的博客换一个酷炫、简约或清新的主题时，该怎么办呢？">
-<meta property="og:updated_time" content="2017-06-08T03:44:43.967Z">
+<meta property="og:updated_time" content="2017-06-08T08:50:53.273Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何为hexo+github搭建的博客更换主题">
 <meta name="twitter:description" content="利用hexo+github捣鼓出的博客，它一般默认的主题是landscape，这款主题不一定都适合每个人的口味，当想为自己的博客换一个酷炫、简约或清新的主题时，该怎么办呢？">
@@ -159,12 +159,34 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>利用hexo+github捣鼓出的博客，它一般默认的主题是landscape，这款主题不一定都适合每个人的口味，当想为自己的博客换一个酷炫、简约或清新的主题时，该怎么办呢？<br><a id="more"></a></p>
-<p>更换博客主题操作很简单，可以简单总结为3步：</p>
-<h1 id="1、寻找自己喜欢的主题"><a href="#1、寻找自己喜欢的主题" class="headerlink" title="1、寻找自己喜欢的主题"></a>1、寻找自己喜欢的主题</h1><p>为了满足不同人的需求，hexo官网也为大家整理出一些比较受欢迎的主题<a href="https://hexo.io/themes" target="_blank" rel="external">hexo主题</a>；<br>除了官网上列出了主题外，也可以参考一下知乎上面这个帖子<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的 Hexo 主题？</a>，该帖子回答中有网友用python爬虫爬取所有的hexo主题并按照star数量进行了排名，可以参考一下。</p>
-<h1 id="2、下载、配置自己喜欢的主题"><a href="#2、下载、配置自己喜欢的主题" class="headerlink" title="2、下载、配置自己喜欢的主题"></a>2、下载、配置自己喜欢的主题</h1><p>找到自己喜欢的主题后，首要任务是下载它；下载完后解压主题，将解压后的主题放入到自己博客所在文件夹中一个名叫themes的文件夹里面<br>然后打开博客所在文件夹中一个名叫_config文件，找到theme设置，将默认landscape更改为你喜欢的主题名称，然后保存修改。</p>
-<h1 id="3、检测新更换的博客主题，然后将主题修改上传到github"><a href="#3、检测新更换的博客主题，然后将主题修改上传到github" class="headerlink" title="3、检测新更换的博客主题，然后将主题修改上传到github"></a>3、检测新更换的博客主题，然后将主题修改上传到github</h1><p>完成上面操作后，在博客所在文件的根目录下， 打开git，然后依次输入：$ hexo g（重新生成页面），$ hexo s(启动本地服务，启动本地服务后，在浏览器网址栏输入<a href="http://localhost:4000即可打开hexo博客页面,查看自己更换主题后的博客。如果在浏览器网址栏输入http://localhost:4000没反应，也就是说打不开自己的博客页面，那么重新在git上输入$" target="_blank" rel="external">http://localhost:4000即可打开hexo博客页面,查看自己更换主题后的博客。如果在浏览器网址栏输入http://localhost:4000没反应，也就是说打不开自己的博客页面，那么重新在git上输入$</a> hexo s -p 5000，然后在浏览器网址栏输入<a href="http://localhost:5000便可打开hexo博客页面" target="_blank" rel="external">http://localhost:5000便可打开hexo博客页面</a>)<br>在本地查看之后，主题修改也奏效了，那么接下来就是上传到github上，方法也很简单，在git上输入$ hexo d便可将自己更改主题后的博客部署到github上。如果出现一些莫名其妙的问题，可以先执行$ hexo clean来清理一下public的内容，然后再来重新生成（$ hexo g）和发布（$ hexo d）即可。</p>
-<p>最后，打开浏览器，在网址栏输入<a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a> (yourname指的是你的github账号)，便可看到更换主题后的博客。bingo！！！</p>
-
+<h2 id="更换博客主题操作很简单，可以简单总结为3步："><a href="#更换博客主题操作很简单，可以简单总结为3步：" class="headerlink" title="更换博客主题操作很简单，可以简单总结为3步："></a>更换博客主题操作很简单，可以简单总结为3步：</h2><blockquote>
+<ul>
+<li><h3 id="1、寻找自己喜欢的主题"><a href="#1、寻找自己喜欢的主题" class="headerlink" title="1、寻找自己喜欢的主题"></a>1、寻找自己喜欢的主题</h3></li>
+</ul>
+</blockquote>
+<p>为了满足不同人的需求，hexo官网也为大家整理出一些比较受欢迎的主题<a href="https://hexo.io/themes" target="_blank" rel="external">hexo主题</a>；<br>除了官网上列出了主题外，也可以参考一下知乎上面这个帖子<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的 Hexo 主题？</a>，该帖子回答中有网友用python爬虫爬取所有的hexo主题并按照star数量进行了排名，可以参考一下。</p>
+<blockquote>
+<ul>
+<li><h3 id="2、下载、配置自己喜欢的主题"><a href="#2、下载、配置自己喜欢的主题" class="headerlink" title="2、下载、配置自己喜欢的主题"></a>2、下载、配置自己喜欢的主题</h3></li>
+</ul>
+</blockquote>
+<p>找到自己喜欢的主题后，首要任务是下载它；下载完后解压主题，将解压后的主题放入到自己博客所在文件夹中一个名叫themes的文件夹里面<br>然后打开博客所在文件夹中一个名叫_config文件，找到theme设置，将默认landscape更改为你喜欢的主题名称，然后保存修改。</p>
+<blockquote>
+<ul>
+<li><h3 id="3、检测新更换的博客主题，然后将主题修改上传到github"><a href="#3、检测新更换的博客主题，然后将主题修改上传到github" class="headerlink" title="3、检测新更换的博客主题，然后将主题修改上传到github"></a>3、检测新更换的博客主题，然后将主题修改上传到github</h3></li>
+</ul>
+</blockquote>
+<p>完成上面操作后，在博客所在文件的根目录下， 打开git，然后依次输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g (重新生成页面)</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s (启动本地服务)</div></pre></td></tr></table></figure>
+<p>启动本地服务后，在浏览器网址栏输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 即可打开hexo博客页面,查看自己更换主题后的博客。</p>
+<p><em>如果在浏览器网址栏输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 没反应，也就是说打不开自己的博客页面，那么重新在git上输入</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s -p 5000</div></pre></td></tr></table></figure></p>
+<p><em>然后在浏览器网址栏输入<a href="http://localhost:5000" target="_blank" rel="external">http://localhost:5000</a> 便可打开hexo博客页面。</em></p>
+<p>在本地查看之后，主题修改也奏效了，那么接下来就是上传到github上，方法也很简单，在git上输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>便可将自己更改主题后的博客部署到github上。</p>
+<p><em>如果出现一些莫名其妙的问题，可以依次执行</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean (清理一下public的内容)</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g (重新生成页面)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d (发布到github)</div></pre></td></tr></table></figure>
+<h2 id="最后，打开浏览器，在网址栏输入https-yourname-github-io-yourname指的是你的github账号-，便可看到更换主题后的博客。bingo！！！"><a href="#最后，打开浏览器，在网址栏输入https-yourname-github-io-yourname指的是你的github账号-，便可看到更换主题后的博客。bingo！！！" class="headerlink" title="最后，打开浏览器，在网址栏输入https://yourname.github.io (yourname指的是你的github账号)，便可看到更换主题后的博客。bingo！！！"></a>最后，打开浏览器，在网址栏输入<a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a> (yourname指的是你的github账号)，便可看到更换主题后的博客。bingo！！！</h2>
       
 
       
@@ -203,6 +225,18 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hexo+github搭建博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">博客功能设置</a>
         		</li>
       		
 		</ul>
@@ -272,6 +306,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2017/06/08/如何在yilia主题的博客中添加自己的头像/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          如何在yilia主题的博客中添加自己的头像
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/06/07/如何利用hexo+github搭建博客/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">如何利用hexo+github搭建博客</div>
@@ -300,7 +343,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-        <div>
+        <div id="busuanzi_container_site_uv">
         "<span id="busuanzi_value_site_uv"></span>人到此一游"
         </div>
     	</div>
@@ -370,6 +413,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">更换博客主题</a>
               </li>
              
@@ -386,6 +433,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">博客功能设置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">搭建博客</a>
               </li>
              
@@ -394,7 +445,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">杂谈</a>
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">头像</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">不蒜子</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">访问次数</a>
               </li>
             
             <div class="clearfix"></div>
